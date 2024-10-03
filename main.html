@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#web_siteleri">Web site çeşitleri</a></li>
+        <li><a href="#Yazılım">Kodlama geçmişim</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section id="about">
+      <h1>About Me</h1>
+      <p>
+        Benim adım Celal Berke Akyol kısaca kendimden bahsetmek gerekirse
+        yatırım finans alanını seven ve bu alana yenilikler katmayı seven
+        birisiyim. 15 yaşında ilk hisse senedimi metaTrader 5 üzerinden aldım.
+        17 yaşında html css kullanarak ilk web sitemi yaptım. Sonrasında
+        wordpress ile 10 a yakın web sitesi yaptım. Bunlardan bazıları kendim
+        için yaptım bazılarını ise sattım
+        <br />
+      </p>
+      <div class="about_img">
+        <img src="./images/metatrader5-breadcrumb.png" alt="Image 1" />
+        <img src="./images/figen.png" alt="Image 2" />
+        <img src="./images/merch.png" alt="Image 3" />
+        <img src="./images/global.png" alt="Image 3" />
+      </div>
+    </section>
+
+    <section id="web_siteleri">
+      <h2>Web siteleri</h2>
+      <p>
+        Bu güne kadar toplamda 10 tane web sitesi yapmışımdır bunların ilki html
+        css kullanarak one page bir websitesiydi. Sonrasında tam bir web sitesi
+        yapmak için araştırma yaparken wordpress ile tanıştım wordpress
+        üzerinden yaklaşık 10 tane site yaptım. Bunları listelemek gerekirse :
+      </p>
+      <div>
+        <div class="column">
+          <h3>Wordpress siteleri</h3>
+          <ul>
+            <li>Hukuk bürosu</li>
+            <li>Güzellik salonu</li>
+            <li>Emlak danışmanlığı</li>
+            <li>Blog sitesi</li>
+            <li>E ticaret sitesi</li>
+            <li>Kurumsal web siteleri</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Diğer siteler</h3>
+          <ul>
+            <li>Html css kullanarak statik siteler</li>
+            <li>
+              Yazılım mühendisliği dersi için - react, node.js, mongodb ile web
+              sitesi
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="örnekler">
+        <div>
+          <h3>Örnek wordpress sitesi</h3>
+          <a href="http://116.202.160.47/"
+            ><button>web sitesini ziyaret edebilirsiniz</button></a
+          >
+        </div>
+
+        <video id="myVideo" controls>
+          <source src="mg2.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <section id="Yazılım">
+      <div>
+        <h2>Kodlama geçmişim</h2>
+        <p>
+          2019 - 2024 <br />
+          Bilgisayar mühendisi olarak kodlama geçmişinden bahsetmeden olmaz. İlk
+          önce web sitesi yapmayı öğrenmek istedim ve sırasıyla html,css,js, Sql
+          database, node.js, nosql database(mongosql) öğrendim.
+        </p>
+        <p>
+          2021 - 2022 <br />
+          Ardından üniversite başladım ve c ve java dersleri gösterildi. Bu
+          dillerde genellikle konsol uygulamaları yaptım
+        </p>
+        <p>
+          2023 - 2024 <br />
+          Bu yazın sonunda ekonomi ve finans çalışırken verileri incelemeye
+          zamanımın yetmemesi sonucunda arayışa girmiştim Sonrasında fintables,
+          stockeys gibi finans uygulamaları ekonomi içnide TMB ve TÜİK gibi
+          sitelerden yararlanıyordum. Buradaki verileri incelemeye zaman
+          yetmediği ve verimsiz olduğu için istatistik, veri analizi ve veri
+          görselleştirme alanında çalışmaya başladım. Python öğrendim şu anda
+          kaggle üzerinde arşatırmalarıma devam ediyorum
+        </p>
+        <div class="Yazılım_müh">
+          <p>
+            2024 2025 senesinde de yazılım mühendisliği projesini üstten alarak
+            linkedin benzeri bir app yaptım
+          </p>
+          <img id="proje_img" src="./images/proje.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Projelerimi incelemek isterseniz Linkler</p>
+      <ul id="linkler" style="align-items: center; text-align: center">
+        <li><a href="https://github.com/CelalBerkeAkyol">Github</a></li>
+        <li><a href="https://www.kaggle.com/celalberkeakyol">Kaggle</a></li>
+      </ul>
+    </section>
+
+    <section id="prefooter" style="text-align: center; margin: 100px">
+      <img src="./images/pp.jpeg" alt="Profile Picture" />
+    </section>
+    <!-- Footer -->
+    <footer style="margin-top: 200px">
+      <p>Developed by Celal Berke Akyol / 2221032005</p>
+    </footer>
+
+    <script>
+      // JavaScript fonksiyonu: Videoyu yeni sekmede açar
+      document.getElementById("playButton").onclick = function () {
+        const video = document.getElementById("myVideo");
+        video.style.display = "block"; // Videoyu göster
+        video.play(); // Videoyu oynat
+      };
+    </script>
+  </body>
+</html>
